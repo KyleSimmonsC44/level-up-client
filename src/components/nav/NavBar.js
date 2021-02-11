@@ -5,15 +5,15 @@ import "./NavBar.css"
 export const NavBar = (props) => {
     return (
         <ul className="navbar">
-            <li className="navbar__item">
-                Navigation link
-            </li>
-            <li className="navbar__item">
-                Navigation link
-            </li>
-            <li className="navbar__item">
-                Navigation link
-            </li>
+            <Link className="navbar__item" to="/games">
+                Games
+            </Link>
+            <Link className="navbar__item" to="/events">
+                Events
+            </Link>
+            <Link className="navbar__item" to="/profile">
+                Profile
+            </Link>
             {
                 (localStorage.getItem("lu_token") !== null) ?
                     <li className="nav-item">
